@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filter.Controller">
+   <children>
+      <Button fx:id="back" layoutX="39.0" layoutY="38.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+      <Label layoutX="214.0" layoutY="32.0" text="Filtered Result">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="4.0" layoutY="90.0" onMousePressed="#clicked" prefHeight="303.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="147.0" text="Enrollment ID" />
+          <TableColumn fx:id="col2" prefWidth="196.0" text="Name" />
+            <TableColumn fx:id="col3" prefWidth="245.0" text="Link To Data" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
